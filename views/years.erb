@@ -1,3 +1,10 @@
 <h1>Years</h1>
 
 <!-- use the erb outputs of <%= %> and call 'inspect' on your object -->
+
+<p>I have been alive for at least part of each of the following years:</p>
+<ol>
+  <% @years.each do |year| %>
+    <li><%=year%></li>
+  <%end%>
+</ol>

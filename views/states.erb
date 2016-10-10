@@ -1,3 +1,10 @@
 <h1>State List</h1>
 
 <!-- iterate through each state in the array and put them into list items individually using the index of the array item as the list items ID -->
+
+<p>I have visited the following states:</p>
+<ul>
+  <% @states.each_with_index do |state, index| %>
+    <li id=<%=index%>><%=state%></li>
+  <% end %>
+</ul>
