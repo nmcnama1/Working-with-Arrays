@@ -8,7 +8,7 @@ get '/' do
 end
 
 get '/years' do
-  @years = Array (1995..Time.now.year)
+  @years = Array (1995..Time.now.year) # nice!
 
   # code!
   erb :years, layout: :main

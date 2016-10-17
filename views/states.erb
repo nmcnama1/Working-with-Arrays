@@ -4,7 +4,9 @@
 
 <p>I have visited the following states:</p>
 <ul>
+  <!-- always use quotes around attribute values in html. IDs are more forgivable but it's a good idea in all cases -->
+  <!-- also, maybe a little white space round some of these tags -->
   <% @states.each_with_index do |state, index| %>
-    <li id=<%=index%>><%=state%></li>
+    <li id="<%= index %>"><%= state %></li>
   <% end %>
 </ul>
